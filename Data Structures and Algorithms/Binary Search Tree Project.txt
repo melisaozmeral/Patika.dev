@@ -1,0 +1,13 @@
+[7, 5, 1, 8, 3, 6, 0, 9, 4, 2] -> Binary Search Tree 
+
+                           6       ->Root is 6
+                          / \
+                         5   7     ->As 5 is smaller than 6, so insert it as the root node of the left subtree.
+                        /     \      As 7 is greater than 6, so insert it as the root node of the right subtree.
+                       0       9   ->0 is smaller than 6 and 5, so it will be inserted as a left subtree of 5.
+                        \      /     9 is greater than 6 and 7, so it will be inserted as a right subtree of 7.
+                         2    8    ->2 is smaller than 6 and 5 but greater than 0, so it will be inserted as the right subtree of 0.
+                        / \          8 is greater than 6 and 7 but smaller than 9, so it will be inserted as the left subtree of 9.
+                       1   4       ->1 and 4 smaller than 6 and 5 but greater than 0, so they will be inserted as the right subtree of 0. 1 is smaller
+                          /          than 2 , so it will be inserted as a left subtree of 2. 4 is greater than 2, so it will be inserted as a right subtree of 2.
+                         3         ->3 is smaller than 4, so it will be inserted as a left subtree of 4.
